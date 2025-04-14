@@ -7,6 +7,8 @@ The dataset is curated by [Fei](https://x.com/William33203632) and [Danning](htt
 
 ## About the dataset
 
+_The dataset is now provided with a 1-day sample. For the entire-range dataset and more details of our work, stay in tune for this repo and the TLDR Conference 2025._
+
 **date_range:** `2023-08-08 to 2025-03-08`
 
 **size:** `~4 GB` for the entire time range.
@@ -44,4 +46,3 @@ The dataset is curated by [Fei](https://x.com/William33203632) and [Danning](htt
 | `builder_label`         | VARCHAR  | Builder of the block identified by extra_data                |
 
 **other_notes:** Transactions with identifiable MEV bot interactions are labeled. Dataset may include rows with `<nil>` in MEV bot label.
-The dataset is now provided with a 1-day sample. For the entire-range dataset and more details of our work, stay in tune for this repo and the TLDR Conference 2025.
