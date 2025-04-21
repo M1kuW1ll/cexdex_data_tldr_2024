@@ -52,4 +52,4 @@ After pulling the CEX-DEX dataset from Dune, you can check the tokens' CEX price
 
 In our project, we are using Binance Spot historical data from Tardis. A Python script for parsing data of token price quoted in USDT on Binance Spot from Tardis is also provided. 
 
-For details about the Tardis data, check the [Tardis documentation]([https://docs.tardis.dev/downloadable-csv-files#trades](https://docs.tardis.dev/historical-data-details/binance))
+For details about the Tardis data, check the [Tardis documentation](https://docs.tardis.dev/historical-data-details/binance).
