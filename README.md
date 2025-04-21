@@ -1,11 +1,9 @@
 # Ethereum CEX-DEX transaction dataset 
 A dataset (sample) of CEX-DEX transactions on the Ethereum mainnet identified by a set of heuristics implemented on Dune Analytics, including the information of the block, the transaction, and the DEX trade(s) executed by the transaction. 
 
-A Python script for parsing CEX token price data from [Tardis](https://docs.tardis.dev/downloadable-csv-files#trades) is also provided. 
-
 The dataset is curated by [Fei](https://x.com/William33203632) and [Danning](https://x.com/sui414), and is part of the [TLDR 2024 fellowship program](https://www.thelatestindefi.org/fellowships).
 
-## About the dataset
+## About the CEX-DEX dataset
 
 _The dataset is now provided with a 1-day sample. For the entire-range dataset and more details of our work, stay in tune for this repo and the TLDR Conference 2025._
 
@@ -46,3 +44,12 @@ _The dataset is now provided with a 1-day sample. For the entire-range dataset a
 | `builder_label`         | VARCHAR  | Builder of the block identified by extra_data                |
 
 **other_notes:** Transactions with identifiable MEV bot interactions are labeled. Dataset may include rows with `<nil>` in MEV bot label.
+
+## Pulling the dataset using Dune API
+
+## Binance price from Tardis
+After pulling the CEX-DEX dataset from Dune, you can check the tokens' CEX prices at the `block_time` or different markouts. 
+
+In our project, we are using Binance Spot historical data from Tardis. A Python script for parsing data of token price quoted in USDT on Binance Spot from Tardis is also provided. 
+
+For details about the Tardis data, check the [Tardis documentation]([https://docs.tardis.dev/downloadable-csv-files#trades](https://docs.tardis.dev/historical-data-details/binance))
