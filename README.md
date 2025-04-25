@@ -44,16 +44,23 @@ _The dataset is now provided with a 1-day sample. For the entire-range dataset a
 
 **other_notes:** Transactions with identifiable MEV bot interactions are labeled. Dataset may include rows with `<nil>` in MEV bot label.
 
-## Pulling the CEX-DEX dataset using Dune API
+## Data Pipeline of our project
+The data pipeline of this project consists of two scripts, one to pull CEX-DEX transaction data from Dune and one to get CEX prices for tokens covered in the dataset during this time range. 
+
+### Pulling the CEX-DEX dataset using Dune API
+The structure of the data from the Dune query output can be seen in the table above. 
+
 To pull the dataset from Dune, you can use the [Dune API endpoints](https://docs.dune.com/api-reference/executions/endpoint/get-query-result) with the [Pagination feature](https://docs.dune.com/api-reference/executions/pagination) to divide the dataset into downloadable .csv files. 
 
 A python script `dune_api.py` for pulling the CEX-DEX dataset using Pagination from Dune API endpoints is provided.
 
-## Binance price from Tardis
+### Binance price from Tardis
 
 After pulling the CEX-DEX dataset from Dune, you can check the tokens' CEX prices at the `block_time` or different markouts. 
 
 In our project, we use Binance Spot historical quote data from Tardis. For details about the Tardis data, check the [Tardis documentation](https://docs.tardis.dev/historical-data-details/binance).
 
-We here provide a Python script `parsing_tardis_data.py` for parsing data of token price quoted in USDT on Binance Spot from Tardis. 
+We here provide a Python script `parsing_tardis_data.py` for parsing data of token price quoted in USDT on Binance Spot from Tardis. To run this script, add a valid TARDIS API key and data directory into lines 36 and 37.
+
+
 
