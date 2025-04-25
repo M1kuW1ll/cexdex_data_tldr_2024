@@ -11,7 +11,7 @@ _The dataset is now provided with a 1-day sample. For the entire-range dataset a
 
 **size:** `~4 GB` for the entire time range.
 
-**structure:** `[8721772, 21]` (8,721,772 rows, 21 columns)
+**structure:** `[8721711, 20]` (8,721,711 rows, 20 columns)
 
 **source:** Dune
 
@@ -41,15 +41,17 @@ _The dataset is now provided with a 1-day sample. For the entire-range dataset a
 | `token_sold_symbol`     | VARCHAR  | Symbol of the token sold                                     |
 | `pair`                  | VARCHAR  | Token trading pair                                           |
 | `multi_trade`           | INT      | Flag indicating if the trade includes multiple swaps (0 or 1) |
-| `builder_label`         | VARCHAR  | Builder of the block identified by extra_data                |
 
 **other_notes:** Transactions with identifiable MEV bot interactions are labeled. Dataset may include rows with `<nil>` in MEV bot label.
 
 ## Pulling the dataset using Dune API
+To pull the dataset from Dune, you can use the [Dune API endpoints](https://docs.dune.com/api-reference/executions/endpoint/get-query-result) with the [Pagination feature](https://docs.dune.com/api-reference/executions/pagination) to divide the dataset into downloadable .csv files. 
+
+A python script `dune_api.py` for pulling the CEX-DEX dataset using Pagination from Dune API endpoints is provided.
 
 ## Binance price from Tardis
 After pulling the CEX-DEX dataset from Dune, you can check the tokens' CEX prices at the `block_time` or different markouts. 
 
-In our project, we are using Binance Spot historical data from Tardis. A Python script for parsing data of token price quoted in USDT on Binance Spot from Tardis is also provided. 
+In our project, we use Binance Spot historical quote data from Tardis. A Python script `parsing_tardis_data.py` for parsing data of token price quoted in USDT on Binance Spot from Tardis is also provided. 
 
 For details about the Tardis data, check the [Tardis documentation](https://docs.tardis.dev/historical-data-details/binance).
