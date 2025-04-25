@@ -52,6 +52,7 @@ A python script `dune_api.py` for pulling the CEX-DEX dataset using Pagination f
 ## Binance price from Tardis
 After pulling the CEX-DEX dataset from Dune, you can check the tokens' CEX prices at the `block_time` or different markouts. 
 
-In our project, we use Binance Spot historical quote data from Tardis. A Python script `parsing_tardis_data.py` for parsing data of token price quoted in USDT on Binance Spot from Tardis is also provided. 
+In our project, we use Binance Spot historical quote data from Tardis. For details about the Tardis data, check the [Tardis documentation](https://docs.tardis.dev/historical-data-details/binance).
 
-For details about the Tardis data, check the [Tardis documentation](https://docs.tardis.dev/historical-data-details/binance).
+We here provide a Python script `parsing_tardis_data.py` for parsing data of token price quoted in USDT on Binance Spot from Tardis. 
+
