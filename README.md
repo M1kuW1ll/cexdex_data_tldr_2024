@@ -1,7 +1,7 @@
 # Ethereum CEX-DEX transaction dataset 
 A dataset (sample) of CEX-DEX transactions on the Ethereum mainnet identified by a set of heuristics implemented on Dune Analytics, including the information of the block, the transaction, and the DEX trade(s) executed by the transaction. 
 
-The dataset is curated by [Fei](https://x.com/William33203632) and [Danning](https://x.com/sui414), and is part of the [TLDR 2024 fellowship program](https://www.thelatestindefi.org/fellowships).
+The dataset is curated by [Fei](https://x.com/William33203632) and [Danning](https://x.com/sui414), and is part of the [TLDR 2024 fellowship program](https://www.thelatestindefi.org/fellowships). Special Thanks to [Tivas](https://x.com/gupta_tivas) for helping organize this repository.
 
 ## About the CEX-DEX dataset
 
