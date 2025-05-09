@@ -11,7 +11,7 @@ _The dataset is now provided with a 1-day sample. For the entire-range dataset a
 
 **size:** `~4 GB` for the entire time range.
 
-**structure:** `[8721711, 20]` (8,721,711 rows, 20 columns)
+**structure:** `[8,668,130, 20]` (8,668,130 rows, 20 columns)
 
 **source:** Dune
 
