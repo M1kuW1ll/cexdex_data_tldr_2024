@@ -5,7 +5,7 @@ import pandas as pd
 
 # Configuration: set your query_id and API key here
 api_key = ""
-url = "https://api.dune.com/api/v1/query/4931834/results/csv"
+url = ""
 
 headers = {"X-DUNE-API-KEY": api_key}
 limit = 500000  # Maximum rows per page (adjust if needed)
